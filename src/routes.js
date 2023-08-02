@@ -8,7 +8,9 @@ import Log from "views/Log.js";
 import Simple from "views/Simple.js";
 // import Icons from "views/Icons.js";
 import Addcomplain from "views/Addcomplain.js";
-
+import AdmissionForm from "views/AdmissionForm";
+import PostalDispatch from "views/PostalDispatch";
+import PostalReceived from "views/PostalReceived";
 
 // import Notifications from "views/Notifications.js";
 // import UserProfile from "views/UserProfile";
@@ -16,6 +18,8 @@ import Rtl from "views/Rtl.js";
 // import TableList from "views/TableList.js";
 
 import { Typography } from "@mui/material";
+import PostalDispatch from "views/PostalDispatch";
+import PostalReceived from "views/PostalReceived";
 
 var routes = [
   {
@@ -95,12 +99,26 @@ var routes = [
     name: "Admission Form",
     rtlName: "لوحة القيادة",
     icon: "tim-icons icon-atom",
-    component: <AddmissionForm />,
+    component: <AdmissionForm />,
+    layout: "/admin",
+  },
+  {
+    path: "/postal-dispatch",
+    name: "Postal Dispatch",
+    rtlName: "لوحة القيادة",
+    icon: "tim-icons icon-atom",
+    component: <PostalDispatch />,
     layout: "/admin",
   },
 
-
-
+  {
+    path: "/postal-recieve",
+    name: "Postal Recieve",
+    rtlName: "لوحة القيادة",
+    icon: "tim-icons icon-atom",
+    component: <PostalReceived />,
+    layout: "/admin",
+  },
 
   // {
   //   path: "/notifications",
@@ -110,9 +128,6 @@ var routes = [
   //   component: <Notifications />,
   //   layout: "/admin",
   // },
-
-
-
 
   // {
   //   path: "/tables",
