@@ -90,7 +90,14 @@ var routes = [
     layout: "/admin",
   },
 
-
+  {
+    path: "/admission-form",
+    name: "Admission Form",
+    rtlName: "لوحة القيادة",
+    icon: "tim-icons icon-atom",
+    component: <AddmissionForm />,
+    layout: "/admin",
+  },
 
 
 
