@@ -1,5 +1,5 @@
 import React from "react";
-import Data from "./data.json";
+
 
 // reactstrap components
 import {
@@ -20,7 +20,7 @@ import {
 
 
 const SubjectList = () => {
-    console.log(Data);
+ 
     return (
         <div className="content">
             <Row>
@@ -76,11 +76,11 @@ const SubjectList = () => {
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    {Data.map((d, i) => {
+                                    {/* {Data.map((d, i) => {
                                         <tr key={i}>
                                             <td>{d.Subject}</td>
                                         </tr>
-                                    })}
+                                    })} */}
                                     <tr>
                                         <td>English</td>
                                         <td>210</td>

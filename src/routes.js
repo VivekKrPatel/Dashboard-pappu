@@ -13,6 +13,7 @@ import PostalDispatch from "views/PostalDispatch";
 import PostalReceived from "views/PostalReceived";
 import SubjectList from "views/SubjectList";
 import SubjectGroup from "views/SubjectGroup";
+import StaffIdCard from "views/StaffIdCard";
 
 // import Notifications from "views/Notifications.js";
 // import UserProfile from "views/UserProfile";
@@ -20,8 +21,7 @@ import Rtl from "views/Rtl.js";
 // import TableList from "views/TableList.js";
 
 import { Typography } from "@mui/material";
-import PostalDispatch from "views/PostalDispatch";
-import PostalReceived from "views/PostalReceived";
+
 
 var routes = [
   {
@@ -135,6 +135,14 @@ var routes = [
     rtlName: "لوحة القيادة",
     icon: "tim-icons icon-atom",
     component: <SubjectGroup />,
+    layout: "/admin",
+  },
+  {
+    path: "/staff-id",
+    name: "Staff Id",
+    rtlName: "لوحة القيادة",
+    icon: "tim-icons icon-atom",
+    component: <StaffIdCard />,
     layout: "/admin",
   },
   // {
