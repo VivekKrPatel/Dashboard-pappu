@@ -11,6 +11,8 @@ import Addcomplain from "views/Addcomplain.js";
 import AdmissionForm from "views/AdmissionForm";
 import PostalDispatch from "views/PostalDispatch";
 import PostalReceived from "views/PostalReceived";
+import SubjectList from "views/SubjectList";
+import SubjectGroup from "views/SubjectGroup";
 
 // import Notifications from "views/Notifications.js";
 // import UserProfile from "views/UserProfile";
@@ -119,7 +121,22 @@ var routes = [
     component: <PostalReceived />,
     layout: "/admin",
   },
-
+  {
+    path: "/subject-list",
+    name: "Subject List",
+    rtlName: "لوحة القيادة",
+    icon: "tim-icons icon-atom",
+    component: <SubjectList />,
+    layout: "/admin",
+  },
+  {
+    path: "/subject-group",
+    name: "Subject Group",
+    rtlName: "لوحة القيادة",
+    icon: "tim-icons icon-atom",
+    component: <SubjectGroup />,
+    layout: "/admin",
+  },
   // {
   //   path: "/notifications",
   //   name: "Notifications",
