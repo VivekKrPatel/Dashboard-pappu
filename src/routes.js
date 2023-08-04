@@ -14,6 +14,9 @@ import PostalReceived from "views/PostalReceived";
 import SubjectList from "views/SubjectList";
 import SubjectGroup from "views/SubjectGroup";
 import StaffIdCard from "views/StaffIdCard";
+import StudentList from "views/StudentList";
+import AdmissionList from "views/AdmissionList";
+import Category from "views/Category";
 
 // import Notifications from "views/Notifications.js";
 // import UserProfile from "views/UserProfile";
@@ -143,6 +146,30 @@ var routes = [
     rtlName: "لوحة القيادة",
     icon: "tim-icons icon-atom",
     component: <StaffIdCard />,
+    layout: "/admin",
+  },
+  {
+    path: "/student-list",
+    name: "Student List",
+    rtlName: "لوحة القيادة",
+    icon: "tim-icons icon-atom",
+    component: <StudentList />,
+    layout: "/admin",
+  },
+  {
+    path: "/admission-list",
+    name: "Admission List",
+    rtlName: "لوحة القيادة",
+    icon: "tim-icons icon-atom",
+    component: <AdmissionList />,
+    layout: "/admin",
+  },
+  {
+    path: "/category",
+    name: "Category",
+    rtlName: "لوحة القيادة",
+    icon: "tim-icons icon-atom",
+    component: <Category />,
     layout: "/admin",
   },
   // {

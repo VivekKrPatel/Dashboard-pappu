@@ -39,8 +39,8 @@ const SubjectList = () => {
                                     <tr>
                                         <th>
                                             <FormControl fullWidth>
-                                                <InputLabel id="demo-simple-select-label">Subject</InputLabel>
-                                                <Select label="Subject">
+                                                <InputLabel id="demo-simple-select-label" >Subject</InputLabel>
+                                                <Select size="small" label="Subject">
                                                     <MenuItem>English</MenuItem>
                                                 </Select>
                                             </FormControl>
@@ -48,7 +48,7 @@ const SubjectList = () => {
                                         <th>
                                             <FormControl fullWidth>
                                                 <InputLabel id="demo-simple-select-label">Subject Code</InputLabel>
-                                                <Select label="Subject">
+                                                <Select size="small" Subject>
                                                     <MenuItem>220</MenuItem>
                                                 </Select>
                                             </FormControl>
@@ -56,7 +56,7 @@ const SubjectList = () => {
                                         <th>
                                             <FormControl fullWidth>
                                                 <InputLabel id="demo-simple-select-label">Subject Type</InputLabel>
-                                                <Select label="Subject">
+                                                <Select size="small" Subject>
                                                     <MenuItem>Theory</MenuItem>
                                                 </Select>
                                             </FormControl>
@@ -64,7 +64,7 @@ const SubjectList = () => {
                                         <th>
                                             <FormControl fullWidth>
                                                 <InputLabel id="demo-simple-select-label">Action</InputLabel>
-                                                <Select label="Subject">
+                                                <Select size="small" label="Subject">
                                                     <MenuItem>Theory</MenuItem>
                                                 </Select>
                                             </FormControl>
