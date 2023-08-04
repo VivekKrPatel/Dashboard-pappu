@@ -1,12 +1,14 @@
 
 import Dashboard from "views/Dashboard.js";
+import Addschool from "views/Addschool.js";
+import StudentForm from "views/StudentForm.js";
 import Teacher from "views/Teacher.js";
 import Criteria from "views/Criteria.js";
 import Form from "views/Form.js";
 import Addvisitor from "views/Addvisitor";
 import Log from "views/Log.js";
 import Simple from "views/Simple.js";
-// import Icons from "views/Icons.js";
+import Icons from "views/Icons.js";
 import Addcomplain from "views/Addcomplain.js";
 import AdmissionForm from "views/AdmissionForm";
 import PostalDispatch from "views/PostalDispatch";
@@ -15,10 +17,10 @@ import SubjectList from "views/SubjectList";
 import SubjectGroup from "views/SubjectGroup";
 import StaffIdCard from "views/StaffIdCard";
 
-// import Notifications from "views/Notifications.js";
-// import UserProfile from "views/UserProfile";
+import Notifications from "views/Notifications.js";
+import UserProfile from "views/UserProfile";
 import Rtl from "views/Rtl.js";
-// import TableList from "views/TableList.js";
+import TableList from "views/TableList.js";
 
 import { Typography } from "@mui/material";
 
@@ -30,6 +32,24 @@ var routes = [
     rtlName: "لوحة القيادة",
     icon: "tim-icons icon-chart-pie-36",
     component: <Dashboard />,
+    layout: "/admin",
+  },
+
+  {
+    path: "/Addschool",
+    name: "ADDSCHOOL",
+    rtlName: "لوحة القيادة",
+    icon: "tim-icons icon-atom",
+    component: <Addschool />,
+    layout: "/admin",
+  },
+
+  {
+    path: "/StudentForm",
+    name: "STUDENTFORM",
+    rtlName: "لوحة القيادة",
+    icon: "tim-icons icon-atom",
+    component: <StudentForm />,
     layout: "/admin",
   },
 
@@ -79,6 +99,15 @@ var routes = [
   },
 
   {
+    path: "/tables",
+    name: "Table List",
+    rtlName: "قائمة الجدول",
+    icon: "tim-icons icon-puzzle-10",
+    component: <TableList />,
+    layout: "/admin",
+  },
+
+  {
     path: "/Addcomplain",
     name: "ADDCOMPLAIN",
     rtlName: "لوحة القيادة",
@@ -95,6 +124,17 @@ var routes = [
     component: <Addvisitor />,
     layout: "/admin",
   },
+
+
+  {
+    path: "/icons",
+    name: "Icons",
+    rtlName: "الرموز",
+    icon: "tim-icons icon-atom",
+    component: <Icons />,
+    layout: "/admin",
+  },
+
 
   {
     path: "/admission-form",
@@ -145,41 +185,26 @@ var routes = [
     component: <StaffIdCard />,
     layout: "/admin",
   },
-  // {
-  //   path: "/notifications",
-  //   name: "Notifications",
-  //   rtlName: "إخطارات",
-  //   icon: "tim-icons icon-bell-55",
-  //   component: <Notifications />,
-  //   layout: "/admin",
-  // },
-
-  // {
-  //   path: "/tables",
-  //   name: "Table List",
-  //   rtlName: "قائمة الجدول",
-  //   icon: "tim-icons icon-puzzle-10",
-  //   component: <TableList />,
-  //   layout: "/admin",
-  // },
-  // {
-  //   path: "/icons",
-  //   name: "Icons",
-  //   rtlName: "الرموز",
-  //   icon: "tim-icons icon-atom",
-  //   component: <Icons />,
-  //   layout: "/admin",
-  // },
+  {
+    path: "/notifications",
+    name: "Notifications",
+    rtlName: "إخطارات",
+    icon: "tim-icons icon-bell-55",
+    component: <Notifications />,
+    layout: "/admin",
+  },
 
 
-  // {
-  //   path: "/user-profile",
-  //   name: "User Profile",
-  //   rtlName: "ملف تعريفي للمستخدم",
-  //   icon: "tim-icons icon-single-02",
-  //   component: <UserProfile />,
-  //   layout: "/admin",
-  // },
+
+
+  {
+    path: "/user-profile",
+    name: "User Profile",
+    rtlName: "ملف تعريفي للمستخدم",
+    icon: "tim-icons icon-single-02",
+    component: <UserProfile />,
+    layout: "/admin",
+  },
   // {
   //   path: "/typography",
   //   name: "Typography",
