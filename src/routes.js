@@ -1,5 +1,9 @@
 
 import Dashboard from "views/Dashboard.js";
+import Tablepayment from "views/Tablepayment.js";
+import Feesdetails from "views/Feesdetails.js";
+import Addexpense from "views/Addexpense.js";
+import Component from "views/Component.js";
 import Addschool from "views/Addschool.js";
 import StudentForm from "views/StudentForm.js";
 import Teacher from "views/Teacher.js";
@@ -16,16 +20,13 @@ import PostalReceived from "views/PostalReceived";
 import SubjectList from "views/SubjectList";
 import SubjectGroup from "views/SubjectGroup";
 import StaffIdCard from "views/StaffIdCard";
-import StudentList from "views/StudentList";
-import AdmissionList from "views/AdmissionList";
-import Category from "views/Category";
 
 import Notifications from "views/Notifications.js";
 import UserProfile from "views/UserProfile";
-import Rtl from "views/Rtl.js";
+// import Rtl from "views/Rtl.js";
 import TableList from "views/TableList.js";
 
-import { Typography } from "@mui/material";
+// import { Typography } from "@mui/material";
 
 
 var routes = [
@@ -39,8 +40,46 @@ var routes = [
   },
 
   {
+    path: "/Addexpense",
+    name: "Add-Expense",
+    rtlName: "قائمة الجدول",
+    icon: "tim-icons icon-atom",
+    component: <Addexpense />,
+    layout: "/admin",
+  },
+
+  {
+    path: "/Feesdetails",
+    name: "Fees- Details",
+    rtlName: "قائمة الجدول",
+    icon: "tim-icons icon-atom",
+    component: <Feesdetails />,
+    layout: "/admin",
+  },
+
+  {
+    path: "/Component",
+    name: "Component",
+    rtlName: "لوحة القيادة",
+    icon: "tim-icons icon-atom",
+    component: <Component />,
+    layout: "/admin",
+  },
+
+  {
+    path: "/Tablepayment",
+    name: "TABLE-PAYMENT",
+    rtlName: "لوحة القيادة",
+    icon: "tim-icons icon-atom",
+    component: <Tablepayment />,
+    layout: "/admin",
+  },
+
+
+
+  {
     path: "/Addschool",
-    name: "ADDSCHOOL",
+    name: "ADD-SCHOOL",
     rtlName: "لوحة القيادة",
     icon: "tim-icons icon-atom",
     component: <Addschool />,
@@ -49,12 +88,23 @@ var routes = [
 
   {
     path: "/StudentForm",
-    name: "STUDENTFORM",
+    name: "STUDENT-FORM",
     rtlName: "لوحة القيادة",
     icon: "tim-icons icon-atom",
     component: <StudentForm />,
     layout: "/admin",
   },
+
+
+  {
+    path: "/tables",
+    name: "Table-List",
+    rtlName: "قائمة الجدول",
+    icon: "tim-icons icon-puzzle-10",
+    component: <TableList />,
+    layout: "/admin",
+  },
+
 
   {
     path: "/Teacher",
@@ -101,18 +151,11 @@ var routes = [
     layout: "/admin",
   },
 
-  {
-    path: "/tables",
-    name: "Table List",
-    rtlName: "قائمة الجدول",
-    icon: "tim-icons icon-puzzle-10",
-    component: <TableList />,
-    layout: "/admin",
-  },
+
 
   {
     path: "/Addcomplain",
-    name: "ADDCOMPLAIN",
+    name: "ADD-COMPLAIN",
     rtlName: "لوحة القيادة",
     icon: "tim-icons icon-atom",
     component: <Addcomplain />,
@@ -121,12 +164,14 @@ var routes = [
 
   {
     path: "/Addvisitor",
-    name: "ADDVISITOR",
+    name: "ADD-VISITOR",
     rtlName: "لوحة القيادة",
     icon: "tim-icons icon-atom",
     component: <Addvisitor />,
     layout: "/admin",
   },
+
+
 
 
   {
@@ -165,8 +210,8 @@ var routes = [
     layout: "/admin",
   },
   {
-    path: "/subject-list",
-    name: "Subject List",
+    path: "/SubjectList",
+    name: "SubjectList",
     rtlName: "لوحة القيادة",
     icon: "tim-icons icon-atom",
     component: <SubjectList />,
@@ -189,56 +234,6 @@ var routes = [
     layout: "/admin",
   },
   {
-<<<<<<< HEAD
-    path: "/student-list",
-    name: "Student List",
-    rtlName: "لوحة القيادة",
-    icon: "tim-icons icon-atom",
-    component: <StudentList />,
-    layout: "/admin",
-  },
-  {
-    path: "/admission-list",
-    name: "Admission List",
-    rtlName: "لوحة القيادة",
-    icon: "tim-icons icon-atom",
-    component: <AdmissionList />,
-    layout: "/admin",
-  },
-  {
-    path: "/category",
-    name: "Category",
-    rtlName: "لوحة القيادة",
-    icon: "tim-icons icon-atom",
-    component: <Category />,
-    layout: "/admin",
-  },
-  // {
-  //   path: "/notifications",
-  //   name: "Notifications",
-  //   rtlName: "إخطارات",
-  //   icon: "tim-icons icon-bell-55",
-  //   component: <Notifications />,
-  //   layout: "/admin",
-  // },
-
-  // {
-  //   path: "/tables",
-  //   name: "Table List",
-  //   rtlName: "قائمة الجدول",
-  //   icon: "tim-icons icon-puzzle-10",
-  //   component: <TableList />,
-  //   layout: "/admin",
-  // },
-  // {
-  //   path: "/icons",
-  //   name: "Icons",
-  //   rtlName: "الرموز",
-  //   icon: "tim-icons icon-atom",
-  //   component: <Icons />,
-  //   layout: "/admin",
-  // },
-=======
     path: "/notifications",
     name: "Notifications",
     rtlName: "إخطارات",
@@ -246,11 +241,6 @@ var routes = [
     component: <Notifications />,
     layout: "/admin",
   },
->>>>>>> 4fb67058ccc9fae1d5da280bf78e3bcb98e5b48f
-
-
-
-
   {
     path: "/user-profile",
     name: "User Profile",
