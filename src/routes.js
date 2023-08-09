@@ -19,6 +19,10 @@ import StaffIdCard from "views/StaffIdCard";
 import StudentList from "views/StudentList";
 import AdmissionList from "views/AdmissionList";
 import Category from "views/Category";
+import DisableReason from "views/DisableReason";
+import FeesMaster from "views/FeesMaster";
+import ExpenseHead from "views/ExpenseHead";
+import ExamGroup from "views/ExamGroup"
 
 import Notifications from "views/Notifications.js";
 import UserProfile from "views/UserProfile";
@@ -189,7 +193,6 @@ var routes = [
     layout: "/admin",
   },
   {
-<<<<<<< HEAD
     path: "/student-list",
     name: "Student List",
     rtlName: "لوحة القيادة",
@@ -213,6 +216,39 @@ var routes = [
     component: <Category />,
     layout: "/admin",
   },
+  {
+    path: "/disable-reason",
+    name: "Disable Reason",
+    rtlName: "لوحة القيادة",
+    icon: "tim-icons icon-atom",
+    component: <DisableReason />,
+    layout: "/admin",
+  },
+  {
+    path: "/fees-master",
+    name: "Fees Master",
+    rtlName: "لوحة القيادة",
+    icon: "tim-icons icon-atom",
+    component: <FeesMaster />,
+    layout: "/admin",
+  },
+  {
+    path: "/expense-head",
+    name: "Expense Head",
+    rtlName: "لوحة القيادة",
+    icon: "tim-icons icon-atom",
+    component: <ExpenseHead />,
+    layout: "/admin",
+  },
+  {
+    path: "/exam-group",
+    name: "Exam Group",
+    rtlName: "لوحة القيادة",
+    icon: "tim-icons icon-atom",
+    component: <ExamGroup />,
+    layout: "/admin",
+  },
+
   // {
   //   path: "/notifications",
   //   name: "Notifications",
@@ -238,7 +274,7 @@ var routes = [
   //   component: <Icons />,
   //   layout: "/admin",
   // },
-=======
+  {
     path: "/notifications",
     name: "Notifications",
     rtlName: "إخطارات",
@@ -246,7 +282,6 @@ var routes = [
     component: <Notifications />,
     layout: "/admin",
   },
->>>>>>> 4fb67058ccc9fae1d5da280bf78e3bcb98e5b48f
 
 
 
