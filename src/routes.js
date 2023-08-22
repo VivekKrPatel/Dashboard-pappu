@@ -1,4 +1,3 @@
-
 import Dashboard from "views/Dashboard.js";
 import Tablepayment from "views/Tablepayment.js";
 import Feesdetails from "views/Feesdetails.js";
@@ -13,6 +12,8 @@ import Addvisitor from "views/Addvisitor";
 import Log from "views/Log.js";
 import Simple from "views/Simple.js";
 import Icons from "views/Icons.js";
+import Notifications from "views/Notifications.js";
+import UserProfile from "views/UserProfile";
 import Addcomplain from "views/Addcomplain.js";
 import AdmissionForm from "views/AdmissionForm";
 import PostalDispatch from "views/PostalDispatch";
@@ -20,7 +21,6 @@ import PostalReceived from "views/PostalReceived";
 import SubjectList from "views/SubjectList";
 import SubjectGroup from "views/SubjectGroup";
 import StaffIdCard from "views/StaffIdCard";
-<<<<<<< HEAD
 import StudentList from "views/StudentList";
 import AdmissionList from "views/AdmissionList";
 import Category from "views/Category";
@@ -28,14 +28,14 @@ import DisableReason from "views/DisableReason";
 import FeesMaster from "views/FeesMaster";
 import ExpenseHead from "views/ExpenseHead";
 import ExamGroup from "views/ExamGroup"
-=======
->>>>>>> c63fa8b08df8801e5995f64305c11bfdfdffd663
-
-import Notifications from "views/Notifications.js";
-import UserProfile from "views/UserProfile";
+import AddFeesGroup from "views/AddFeesGroup";
 // import Rtl from "views/Rtl.js";
 import TableList from "views/TableList.js";
-
+import MarksGrade from "views/MarksGrade";
+import MarksDivision from "views/MarksDivision";
+import OnlineExam from "views/OnlineExam";
+import SelectCriteria from "views/SelectCriteria";
+import ExamGradeList from "views/ExamGradeList";
 // import { Typography } from "@mui/material";
 
 
@@ -84,9 +84,6 @@ var routes = [
     component: <Tablepayment />,
     layout: "/admin",
   },
-
-
-
   {
     path: "/Addschool",
     name: "ADD-SCHOOL",
@@ -105,7 +102,6 @@ var routes = [
     layout: "/admin",
   },
 
-
   {
     path: "/tables",
     name: "Table-List",
@@ -114,8 +110,6 @@ var routes = [
     component: <TableList />,
     layout: "/admin",
   },
-
-
   {
     path: "/Teacher",
     name: "TEACHER",
@@ -133,7 +127,6 @@ var routes = [
     component: <Criteria />,
     layout: "/admin",
   },
-
   {
     path: "/Log",
     name: "Log",
@@ -161,8 +154,6 @@ var routes = [
     layout: "/admin",
   },
 
-
-
   {
     path: "/Addcomplain",
     name: "ADD-COMPLAIN",
@@ -181,9 +172,6 @@ var routes = [
     layout: "/admin",
   },
 
-
-
-
   {
     path: "/icons",
     name: "Icons",
@@ -192,8 +180,6 @@ var routes = [
     component: <Icons />,
     layout: "/admin",
   },
-
-
   {
     path: "/admission-form",
     name: "Admission Form",
@@ -210,7 +196,6 @@ var routes = [
     component: <PostalDispatch />,
     layout: "/admin",
   },
-
   {
     path: "/postal-recieve",
     name: "Postal Recieve",
@@ -244,7 +229,6 @@ var routes = [
     layout: "/admin",
   },
   {
-<<<<<<< HEAD
     path: "/student-list",
     name: "Student List",
     rtlName: "لوحة القيادة",
@@ -300,7 +284,54 @@ var routes = [
     component: <ExamGroup />,
     layout: "/admin",
   },
-
+  {
+    path: "/add-fees-group",
+    name: "Add Fees Group",
+    rtlName: "لوحة القيادة",
+    icon: "tim-icons icon-atom",
+    component: <AddFeesGroup />,
+    layout: "/admin",
+  },
+  {
+    path: "/marks-grade",
+    name: "Marks Grade",
+    rtlName: "لوحة القيادة",
+    icon: "tim-icons icon-atom",
+    component: <MarksGrade />,
+    layout: "/admin",
+  },
+  {
+    path: "/marks-division",
+    name: "Marks Division",
+    rtlName: "لوحة القيادة",
+    icon: "tim-icons icon-atom",
+    component: <MarksDivision />,
+    layout: "/admin",
+  },
+  {
+    path: "/online-exam",
+    name: "Online Exam",
+    rtlName: "لوحة القيادة",
+    icon: "tim-icons icon-atom",
+    component: <OnlineExam />,
+    layout: "/admin",
+  },
+  {
+    path: "/select-criteria",
+    name: "Select Criteria",
+    rtlName: "لوحة القيادة",
+    icon: "tim-icons icon-atom",
+    component: <SelectCriteria />,
+    layout: "/admin",
+  },
+  {
+    path: "/exam-grade-list",
+    name: "Exam Grade List",
+    rtlName: "لوحة القيادة",
+    icon: "tim-icons icon-atom",
+    component: <ExamGradeList />,
+    layout: "/admin",
+  },
   // {
   //   path: "/notifications",
   //   name: "Notifications",
@@ -327,8 +358,6 @@ var routes = [
   //   layout: "/admin",
   // },
   {
-=======
->>>>>>> c63fa8b08df8801e5995f64305c11bfdfdffd663
     path: "/notifications",
     name: "Notifications",
     rtlName: "إخطارات",
@@ -336,13 +365,7 @@ var routes = [
     component: <Notifications />,
     layout: "/admin",
   },
-<<<<<<< HEAD
-
-
-
-
-=======
->>>>>>> c63fa8b08df8801e5995f64305c11bfdfdffd663
+  
   {
     path: "/user-profile",
     name: "User Profile",
