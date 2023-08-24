@@ -13,8 +13,6 @@ import CheckBox from '@mui/material/Checkbox';
 import FormControlLabel from '@mui/material/FormControlLabel';
 import FormControl from '@mui/material/FormControl';
 
-
-
 const style = {
     position: 'absolute',
     top: '50%',

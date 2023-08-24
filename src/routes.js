@@ -36,6 +36,7 @@ import MarksDivision from "views/MarksDivision";
 import OnlineExam from "views/OnlineExam";
 import SelectCriteria from "views/SelectCriteria";
 import ExamGradeList from "views/ExamGradeList";
+import ExamGroup1 from "views/ExamGroup1";
 // import { Typography } from "@mui/material";
 
 
@@ -330,6 +331,14 @@ var routes = [
     rtlName: "لوحة القيادة",
     icon: "tim-icons icon-atom",
     component: <ExamGradeList />,
+    layout: "/admin",
+  },
+  {
+    path: "/exam-group-1",
+    name: "Exam Group 1",
+    rtlName: "لوحة القيادة",
+    icon: "tim-icons icon-atom",
+    component: <ExamGroup1 />,
     layout: "/admin",
   },
   // {
