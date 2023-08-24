@@ -1,4 +1,10 @@
+
 import Dashboard from "views/Dashboard.js";
+import Examlist from "views/Examlist";
+import GradeList from "views/GradeList.js";
+import AddTable from "views/AddTable.js";
+import Addleave from "views/Addleave.js";
+import Marksheet from "views/Marksheet.js";
 import Tablepayment from "views/Tablepayment.js";
 import Feesdetails from "views/Feesdetails.js";
 import Addexpense from "views/Addexpense.js";
@@ -11,9 +17,9 @@ import Form from "views/Form.js";
 import Addvisitor from "views/Addvisitor";
 import Log from "views/Log.js";
 import Simple from "views/Simple.js";
+import Addmark from "views/Addmark.js";
 import Icons from "views/Icons.js";
-import Notifications from "views/Notifications.js";
-import UserProfile from "views/UserProfile";
+import Admitcard from "views/Admitcard.js";
 import Addcomplain from "views/Addcomplain.js";
 import AdmissionForm from "views/AdmissionForm";
 import PostalDispatch from "views/PostalDispatch";
@@ -28,15 +34,12 @@ import DisableReason from "views/DisableReason";
 import FeesMaster from "views/FeesMaster";
 import ExpenseHead from "views/ExpenseHead";
 import ExamGroup from "views/ExamGroup"
-import AddFeesGroup from "views/AddFeesGroup";
+import Addfees from "views/Addfees";
+import Notifications from "views/Notifications.js";
+import UserProfile from "views/UserProfile";
 // import Rtl from "views/Rtl.js";
 import TableList from "views/TableList.js";
-import MarksGrade from "views/MarksGrade";
-import MarksDivision from "views/MarksDivision";
-import OnlineExam from "views/OnlineExam";
-import SelectCriteria from "views/SelectCriteria";
-import ExamGradeList from "views/ExamGradeList";
-import ExamGroup1 from "views/ExamGroup1";
+import SchoolModel from "views/SchoolModel";
 // import { Typography } from "@mui/material";
 
 
@@ -50,12 +53,70 @@ var routes = [
     layout: "/admin",
   },
 
+
+  {
+    path: "/GradeList",
+    name: "Grade-List",
+    rtlName: "قائمة الجدول",
+    icon: "tim-icons icon-atom",
+    component: <GradeList />,
+    layout: "/admin",
+  },
+
+  {
+    path: "/AddTable",
+    name: "AddTable",
+    rtlName: "قائمة الجدول",
+    icon: "tim-icons icon-atom",
+    component: <AddTable />,
+    layout: "/admin",
+  },
+
+
+
+  {
+    path: "/Examlist",
+    name: "EXAM-LIST",
+    rtlName: "قائمة الجدول",
+    icon: "tim-icons icon-atom",
+    component: <Examlist />,
+    layout: "/admin",
+  },
+
+
+  {
+    path: "/Addleave",
+    name: "ADD-LEAVE",
+    rtlName: "قائمة الجدول",
+    icon: "tim-icons icon-atom",
+    component: <Addleave />,
+    layout: "/admin",
+  },
+
+  {
+    path: "/SchoolModel",
+    name: "SchoolModel",
+    rtlName: "قائمة الجدول",
+    icon: "tim-icons icon-atom",
+    component: <SchoolModel />,
+    layout: "/admin",
+  },
   {
     path: "/Addexpense",
     name: "Add-Expense",
     rtlName: "قائمة الجدول",
     icon: "tim-icons icon-atom",
     component: <Addexpense />,
+    layout: "/admin",
+  },
+
+
+  {
+    path: "/Marksheet",
+    name: "MARK-SHEET",
+    rtlName: "قائمة الجدول",
+    icon: "tim-icons icon-atom",
+    component: <Marksheet />,
     layout: "/admin",
   },
 
@@ -85,6 +146,9 @@ var routes = [
     component: <Tablepayment />,
     layout: "/admin",
   },
+
+
+
   {
     path: "/Addschool",
     name: "ADD-SCHOOL",
@@ -103,6 +167,7 @@ var routes = [
     layout: "/admin",
   },
 
+
   {
     path: "/tables",
     name: "Table-List",
@@ -111,6 +176,8 @@ var routes = [
     component: <TableList />,
     layout: "/admin",
   },
+
+
   {
     path: "/Teacher",
     name: "TEACHER",
@@ -128,6 +195,7 @@ var routes = [
     component: <Criteria />,
     layout: "/admin",
   },
+
   {
     path: "/Log",
     name: "Log",
@@ -155,6 +223,8 @@ var routes = [
     layout: "/admin",
   },
 
+
+
   {
     path: "/Addcomplain",
     name: "ADD-COMPLAIN",
@@ -174,6 +244,33 @@ var routes = [
   },
 
   {
+    path: "/Addfees",
+    name: "ADD-FEES",
+    rtlName: "لوحة القيادة",
+    icon: "tim-icons icon-atom",
+    component: <Addfees />,
+    layout: "/admin",
+  },
+
+  {
+    path: "/Admitcard",
+    name: "ADMIT-CARD",
+    rtlName: "لوحة القيادة",
+    icon: "tim-icons icon-atom",
+    component: <Admitcard />,
+    layout: "/admin",
+  },
+
+  {
+    path: "/Addmark",
+    name: "ADD-MARK",
+    rtlName: "لوحة القيادة",
+    icon: "tim-icons icon-atom",
+    component: <Addmark />,
+    layout: "/admin",
+  },
+
+  {
     path: "/icons",
     name: "Icons",
     rtlName: "الرموز",
@@ -181,6 +278,8 @@ var routes = [
     component: <Icons />,
     layout: "/admin",
   },
+
+
   {
     path: "/admission-form",
     name: "Admission Form",
@@ -197,6 +296,7 @@ var routes = [
     component: <PostalDispatch />,
     layout: "/admin",
   },
+
   {
     path: "/postal-recieve",
     name: "Postal Recieve",
@@ -285,87 +385,7 @@ var routes = [
     component: <ExamGroup />,
     layout: "/admin",
   },
-  {
-    path: "/add-fees-group",
-    name: "Add Fees Group",
-    rtlName: "لوحة القيادة",
-    icon: "tim-icons icon-atom",
-    component: <AddFeesGroup />,
-    layout: "/admin",
-  },
-  {
-    path: "/marks-grade",
-    name: "Marks Grade",
-    rtlName: "لوحة القيادة",
-    icon: "tim-icons icon-atom",
-    component: <MarksGrade />,
-    layout: "/admin",
-  },
-  {
-    path: "/marks-division",
-    name: "Marks Division",
-    rtlName: "لوحة القيادة",
-    icon: "tim-icons icon-atom",
-    component: <MarksDivision />,
-    layout: "/admin",
-  },
-  {
-    path: "/online-exam",
-    name: "Online Exam",
-    rtlName: "لوحة القيادة",
-    icon: "tim-icons icon-atom",
-    component: <OnlineExam />,
-    layout: "/admin",
-  },
-  {
-    path: "/select-criteria",
-    name: "Select Criteria",
-    rtlName: "لوحة القيادة",
-    icon: "tim-icons icon-atom",
-    component: <SelectCriteria />,
-    layout: "/admin",
-  },
-  {
-    path: "/exam-grade-list",
-    name: "Exam Grade List",
-    rtlName: "لوحة القيادة",
-    icon: "tim-icons icon-atom",
-    component: <ExamGradeList />,
-    layout: "/admin",
-  },
-  {
-    path: "/exam-group-1",
-    name: "Exam Group 1",
-    rtlName: "لوحة القيادة",
-    icon: "tim-icons icon-atom",
-    component: <ExamGroup1 />,
-    layout: "/admin",
-  },
-  // {
-  //   path: "/notifications",
-  //   name: "Notifications",
-  //   rtlName: "إخطارات",
-  //   icon: "tim-icons icon-bell-55",
-  //   component: <Notifications />,
-  //   layout: "/admin",
-  // },
 
-  // {
-  //   path: "/tables",
-  //   name: "Table List",
-  //   rtlName: "قائمة الجدول",
-  //   icon: "tim-icons icon-puzzle-10",
-  //   component: <TableList />,
-  //   layout: "/admin",
-  // },
-  // {
-  //   path: "/icons",
-  //   name: "Icons",
-  //   rtlName: "الرموز",
-  //   icon: "tim-icons icon-atom",
-  //   component: <Icons />,
-  //   layout: "/admin",
-  // },
   {
     path: "/notifications",
     name: "Notifications",
@@ -374,15 +394,7 @@ var routes = [
     component: <Notifications />,
     layout: "/admin",
   },
-  
-  {
-    path: "/user-profile",
-    name: "User Profile",
-    rtlName: "ملف تعريفي للمستخدم",
-    icon: "tim-icons icon-single-02",
-    component: <UserProfile />,
-    layout: "/admin",
-  },
+
   // {
   //   path: "/typography",
   //   name: "Typography",
