@@ -19,7 +19,7 @@ return(
     
     <Card style={{ margin: '0 auto' }}>
                                              <Typography gutterBottom variant="h4">
-                                                 Add Leave
+                                                 Select Criteria
                                              </Typography>
                                              <CardContent>
                                                

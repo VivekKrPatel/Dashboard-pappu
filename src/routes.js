@@ -40,8 +40,13 @@ import UserProfile from "views/UserProfile";
 // import Rtl from "views/Rtl.js";
 import TableList from "views/TableList.js";
 import SchoolModel from "views/SchoolModel";
+import MarksDivision from "views/MarksDivision";
 import ExamGradeList from "views/ExamGradeList";
 import ExamGroup1 from "views/ExamGroup1";
+import SelectCriteria from "views/SelectCriteria";
+import OnlineExam from "views/OnlineExam";
+import MarksGrade from "views/MarksGrade";
+import AddFeesGroup from "views/AddFeesGroup";
 // import { Typography } from "@mui/material";
 
 
@@ -387,7 +392,47 @@ var routes = [
     component: <ExamGroup />,
     layout: "/admin",
   },
+  {
+    path: "/marks-division",
+    name: "Marks Division",
+    rtlName: "إخطارات",
+    icon: "tim-icons icon-bell-55",
+    component: <MarksDivision />,
+    layout: "/admin",
+  },
+  {
+    path: "/mark-grade",
+    name: "Marks Grade",
+    rtlName: "إخطارات",
+    icon: "tim-icons icon-bell-55",
+    component: <MarksGrade />,
+    layout: "/admin",
+  },
 
+  {
+    path: "/online-exam",
+    name: "Online Exam",
+    rtlName: "إخطارات",
+    icon: "tim-icons icon-bell-55",
+    component: <OnlineExam />,
+    layout: "/admin",
+  },
+  {
+    path: "/select-criteria",
+    name: "Select Criteria",
+    rtlName: "إخطارات",
+    icon: "tim-icons icon-bell-55",
+    component: <SelectCriteria />,
+    layout: "/admin",
+  },
+  {
+    path: "/add-fees-group",
+    name: "Add Fees Group",
+    rtlName: "إخطارات",
+    icon: "tim-icons icon-bell-55",
+    component: <AddFeesGroup />,
+    layout: "/admin",
+  },
   {
     path: "/exam-gradelist",
     name: "Exam GradeList",
@@ -396,7 +441,7 @@ var routes = [
     component: <ExamGradeList />,
     layout: "/admin",
   },
-  
+
   {
     path: "/exam-group1",
     name: "Exam Group 1",
@@ -431,7 +476,5 @@ var routes = [
   //   component: <Rtl />,
   //   layout: "/rtl",
   // },
-
-
 ];
 export default routes;
