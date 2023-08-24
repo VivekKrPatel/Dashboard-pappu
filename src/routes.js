@@ -40,6 +40,8 @@ import UserProfile from "views/UserProfile";
 // import Rtl from "views/Rtl.js";
 import TableList from "views/TableList.js";
 import SchoolModel from "views/SchoolModel";
+import ExamGradeList from "views/ExamGradeList";
+import ExamGroup1 from "views/ExamGroup1";
 // import { Typography } from "@mui/material";
 
 
@@ -52,7 +54,6 @@ var routes = [
     component: <Dashboard />,
     layout: "/admin",
   },
-
 
   {
     path: "/GradeList",
@@ -72,8 +73,6 @@ var routes = [
     layout: "/admin",
   },
 
-
-
   {
     path: "/Examlist",
     name: "EXAM-LIST",
@@ -82,7 +81,6 @@ var routes = [
     component: <Examlist />,
     layout: "/admin",
   },
-
 
   {
     path: "/Addleave",
@@ -101,6 +99,7 @@ var routes = [
     component: <SchoolModel />,
     layout: "/admin",
   },
+
   {
     path: "/Addexpense",
     name: "Add-Expense",
@@ -109,7 +108,6 @@ var routes = [
     component: <Addexpense />,
     layout: "/admin",
   },
-
 
   {
     path: "/Marksheet",
@@ -147,8 +145,6 @@ var routes = [
     layout: "/admin",
   },
 
-
-
   {
     path: "/Addschool",
     name: "ADD-SCHOOL",
@@ -167,7 +163,6 @@ var routes = [
     layout: "/admin",
   },
 
-
   {
     path: "/tables",
     name: "Table-List",
@@ -176,7 +171,6 @@ var routes = [
     component: <TableList />,
     layout: "/admin",
   },
-
 
   {
     path: "/Teacher",
@@ -222,8 +216,6 @@ var routes = [
     component: <Simple />,
     layout: "/admin",
   },
-
-
 
   {
     path: "/Addcomplain",
@@ -279,7 +271,6 @@ var routes = [
     layout: "/admin",
   },
 
-
   {
     path: "/admission-form",
     name: "Admission Form",
@@ -288,6 +279,7 @@ var routes = [
     component: <AdmissionForm />,
     layout: "/admin",
   },
+
   {
     path: "/postal-dispatch",
     name: "Postal Dispatch",
@@ -305,6 +297,7 @@ var routes = [
     component: <PostalReceived />,
     layout: "/admin",
   },
+
   {
     path: "/SubjectList",
     name: "SubjectList",
@@ -313,6 +306,7 @@ var routes = [
     component: <SubjectList />,
     layout: "/admin",
   },
+
   {
     path: "/subject-group",
     name: "Subject Group",
@@ -321,6 +315,7 @@ var routes = [
     component: <SubjectGroup />,
     layout: "/admin",
   },
+
   {
     path: "/staff-id",
     name: "Staff Id",
@@ -329,6 +324,7 @@ var routes = [
     component: <StaffIdCard />,
     layout: "/admin",
   },
+
   {
     path: "/student-list",
     name: "Student List",
@@ -337,6 +333,7 @@ var routes = [
     component: <StudentList />,
     layout: "/admin",
   },
+
   {
     path: "/admission-list",
     name: "Admission List",
@@ -345,6 +342,7 @@ var routes = [
     component: <AdmissionList />,
     layout: "/admin",
   },
+
   {
     path: "/category",
     name: "Category",
@@ -353,6 +351,7 @@ var routes = [
     component: <Category />,
     layout: "/admin",
   },
+
   {
     path: "/disable-reason",
     name: "Disable Reason",
@@ -361,6 +360,7 @@ var routes = [
     component: <DisableReason />,
     layout: "/admin",
   },
+
   {
     path: "/fees-master",
     name: "Fees Master",
@@ -369,6 +369,7 @@ var routes = [
     component: <FeesMaster />,
     layout: "/admin",
   },
+
   {
     path: "/expense-head",
     name: "Expense Head",
@@ -377,12 +378,31 @@ var routes = [
     component: <ExpenseHead />,
     layout: "/admin",
   },
+
   {
     path: "/exam-group",
     name: "Exam Group",
     rtlName: "لوحة القيادة",
     icon: "tim-icons icon-atom",
     component: <ExamGroup />,
+    layout: "/admin",
+  },
+
+  {
+    path: "/exam-gradelist",
+    name: "Exam GradeList",
+    rtlName: "إخطارات",
+    icon: "tim-icons icon-bell-55",
+    component: <ExamGradeList />,
+    layout: "/admin",
+  },
+  
+  {
+    path: "/exam-group1",
+    name: "Exam Group 1",
+    rtlName: "إخطارات",
+    icon: "tim-icons icon-bell-55",
+    component: <ExamGroup1 />,
     layout: "/admin",
   },
 

@@ -6,7 +6,7 @@ import { Typography, Card, CardContent, Grid, Button, Select, MenuItem, TextFiel
 import AddIcon from '@mui/icons-material/Add';
 import DeleteIcon from '@mui/icons-material/Delete';
 import SearchIcon from '@mui/icons-material/Search';
-import { DataGrid } from '@mui/x-data-grid';
+// import { DataGrid } from '@mui/x-data-grid';
 //icon
 
 import { VscFiles, HiOutlinePencil } from 'react-icons/vsc'
@@ -257,7 +257,7 @@ const SchoolModel = () => {
 
                             <Grid xs={12} style={{ marginTop: '70px' }} item>
                                 <div style={{ height: 200, width: '100%' }}>
-                                    <DataGrid
+                                    {/* <DataGrid
                                         rows={rows}
                                         columns={columns}
                                         initialState={{
@@ -267,7 +267,7 @@ const SchoolModel = () => {
                                         }}
                                         pageSizeOptions={[5, 10]}
                                         checkboxSelection
-                                    />
+                                    /> */}
                                 </div>
                             </Grid>
 
