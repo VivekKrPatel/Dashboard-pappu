@@ -88,15 +88,11 @@ return(
                                                            Remark
                                                             <TextField type="number" variant="outlined" size="small" fullWidth />
                                                         </Grid>
-                                                      
-
                                                         </Grid>
 
                                                         <Grid xs={12} sm={2} style={{ marginLeft: '680px' }} item>
                                                             <Button variant="contained">Save</Button>
                                                         </Grid>
-                                               
-                                              
                                             </CardContent>
                                         </Card>
                                     </Box>
