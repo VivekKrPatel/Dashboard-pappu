@@ -47,7 +47,8 @@ import SelectCriteria from "views/SelectCriteria";
 import OnlineExam from "views/OnlineExam";
 import MarksGrade from "views/MarksGrade";
 import AddFeesGroup from "views/AddFeesGroup";
-// import { Typography } from "@mui/material";
+import DivisionList from "views/DivisionList";
+
 
 
 var routes = [
@@ -451,6 +452,14 @@ var routes = [
     layout: "/admin",
   },
 
+  {
+    path: "/division-list",
+    name: "Division List",
+    rtlName: "إخطارات",
+    icon: "tim-icons icon-bell-55",
+    component: <DivisionList />,
+    layout: "/admin",
+  },
   {
     path: "/notifications",
     name: "Notifications",
