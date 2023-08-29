@@ -48,6 +48,7 @@ import OnlineExam from "views/OnlineExam";
 import MarksGrade from "views/MarksGrade";
 import AddFeesGroup from "views/AddFeesGroup";
 import DivisionList from "views/DivisionList";
+import ClassTeacher from "views/ClassTeacher";
 
 
 
@@ -458,6 +459,14 @@ var routes = [
     rtlName: "إخطارات",
     icon: "tim-icons icon-bell-55",
     component: <DivisionList />,
+    layout: "/admin",
+  },
+  {
+    path: "/class-teacher",
+    name: "Class Teacher",
+    rtlName: "إخطارات",
+    icon: "tim-icons icon-bell-55",
+    component: <ClassTeacher />,
     layout: "/admin",
   },
   {
