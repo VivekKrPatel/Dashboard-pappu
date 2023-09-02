@@ -2,7 +2,7 @@
   "name": "black-dashboard-react",
   "version": "1.2.2",
   "private": true,
-  "homepage": "http://VivekKrPatel.github.io/dashboard-pappu",
+  "homepage": "http://VivekKrPatel.github.io/Dashboard-pappu",
   "dependencies": {
     "@emotion/react": "^11.11.1",
     "@emotion/styled": "^11.11.0",
