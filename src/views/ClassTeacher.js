@@ -19,17 +19,10 @@ const MarksGrade = () => {
                         <label>Section</label>
                         <Input type="text" />
                         <label>Class Teacher</label>
-                        {/* <Checkbox />
-                        <label>JShivam Mehra (9002)</label>
-                        <Checkbox />
-                        <label>Jason Sharlton (900002301)</label>
-                        <Checkbox />
-                        <label>Albert Thomas (52201)</label> */}
                         <FormGroup>
   <FormControlLabel control={<Checkbox />} label="Shivam Mehra (9002)" />
   <FormControlLabel  control={<Checkbox />} label="Jason Sharlton (900002301)" />
-  <FormControlLabel  control={<Checkbox />} label="Albert Thomas (52201)" />
-</FormGroup>
+  <FormControlLabel  control={<Checkbox />} label="Albert Thomas (52201)" /></FormGroup>
                         <Button style={{ marginLeft: "140px", marginTop: "20px", width: "150px" }}>Save</Button>
                     </Card>
                 </Col>
@@ -56,8 +49,6 @@ const MarksGrade = () => {
                         </Table>
                     </Card>
                 </Col>
-
-
             </Row>
         </div>
     )
